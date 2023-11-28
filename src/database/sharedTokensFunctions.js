@@ -10,6 +10,8 @@ const sharedTokensFunctions = {
       console.log(`Shared token ${tokenId} created successfully.`);
     } catch (error) {
       console.error("Error creating shared token:", error);
+      console.error("Error creating shared token:", error);
+      console.error("Error creating shared token:", error);
     }
   },
 
@@ -23,7 +25,7 @@ const sharedTokensFunctions = {
         return null;
       }
     } catch (error) {
-      console.error("Error reading shared token:", error);
+      console.error("Error reading shar!ed token:", error);
     }
   },
 
