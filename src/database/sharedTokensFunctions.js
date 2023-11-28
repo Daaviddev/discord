@@ -1,7 +1,7 @@
 // Contains CRUD operations for the sharedTokens collection.
 
-const db = require("./firebaseSetup");
-const sharedTokensCollection = db.collection("servers");
+const db = require('./firebaseSetup');
+const sharedTokensCollection = db.collection('servers');
 
 const sharedTokensFunctions = {
   createSharedToken: async (tokenId, sharedTokenData) => {
@@ -9,9 +9,11 @@ const sharedTokensFunctions = {
       await sharedTokensCollection.doc(tokenId).set(sharedTokenData);
       console.log(`Shared token ${tokenId} created successfully.`);
     } catch (error) {
-      console.error("Error creating shared token:", error);
-      console.error("Error creating shared token:", error);
-      console.error("Error creating shared token:", error);
+      console.error('Error creating shared token:', error);
+      console.error('Error creating shared token:', error);
+      console.error('Error creating shared token:', error);
+      console.error('Error creating shared token:', error);
+      console.error('Error creating shared token:', error);
     }
   },
 
@@ -25,7 +27,7 @@ const sharedTokensFunctions = {
         return null;
       }
     } catch (error) {
-      console.error("Error reading shar!ed token:", error);
+      console.error('Error reading shar!ed token:', error);
     }
   },
 
@@ -34,7 +36,7 @@ const sharedTokensFunctions = {
       await sharedTokensCollection.doc(tokenId).update(updatedData);
       console.log(`Shared token ${tokenId} updated successfully.`);
     } catch (error) {
-      console.error("Error updating shared token:", error);
+      console.error('Error updating shared token:', error);
     }
   },
 
@@ -43,7 +45,7 @@ const sharedTokensFunctions = {
       await sharedTokensCollection.doc(tokenId).delete();
       console.log(`Shared token ${tokenId} deleted successfully.`);
     } catch (error) {
-      console.error("Error deleting shared token:", error);
+      console.error('Error deleting shared token:', error);
     }
   },
 };
