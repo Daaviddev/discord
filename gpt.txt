@@ -1,0 +1,41 @@
+Set up the /buy and /sell slash commands.
+When the command is invoked, show a modal to collect the initial trade details.
+After the modal is submitted, send a message with the collected info and include select menus for further details.
+select menu : 
+Select Type : 
+ .addOptions([
+        {
+          label: "Spot",
+          value: "Spot",
+        },
+        {
+          label: "10x-20x",
+          value: "10x-20x",
+        },
+        {
+          label: "20x-50x",
+          value: "20x-50x",
+        },
+        {
+          label: "50x-100x",
+          value: "50x-100x",
+        },
+        {
+          label: "100x+",
+          value: "100x+",
+        },
+ ])
+
+Use buttons to add additional options like "AddTP" and "Additional".
+
+AddTP button: opens modal with 4 input boxes for TP1, TP2, TP3, TP4 - this is not mandatory info
+Additional button: add input field for -Trade Risk, Trade Length -  this is not mandatory info
+Submit button: submits all information given, create thread, send embed with all info into thread 
+
+The "Submit" button would finalize the trade, create a thread, and post an embed with all the information and image from slash command.
+
+
+Ensure all new files are correctly referenced in your main bot file (bot.js) or any other relevant files.
+Implement appropriate error handling and input validation.
+The placeholders (like // ...) in the code snippets should be filled with specific details based on your project's requirements and existing code structure.
+
